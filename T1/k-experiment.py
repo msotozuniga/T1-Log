@@ -5,9 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def formating(x):
-    return '{}{}'.format(x, '\n')
-
 
 def perform_experiments(k):
     times = []
