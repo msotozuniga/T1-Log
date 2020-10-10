@@ -1,5 +1,4 @@
-import sys
-import random as rn
+
 import commons as comm
 
 
@@ -33,7 +32,7 @@ def dump_data(data):
     f = open("output.txt", 'a')
     number_blocks = len(data) // comm.B
     for i in range(number_blocks):
-        f.write(data[i * comm.B:](i + 1) * comm.B)
+        f.write(''.join(data[i * comm.B:(i + 1) * comm.B]))
     return number_blocks
 
 

@@ -8,7 +8,7 @@ import numpy as np
 def test_case(p, t):
     data = []
     for i in range(len(p)):
-        run = perform_experiment(p[i], t, 2)
+        run = perform_experiment(p[i], t, 15)
         data.append(run)
     return data
 
@@ -21,7 +21,7 @@ def perform_experiment(P_size, T_size, k):
     index_time = []
     index_comp = []
     for i in range(k):
-        gn.generate(P_size, T_size)
+        #gn.generate(P_size, T_size)
         print("Se generaron datos")
         now = tm.time()
         result, io = srt.binary_search("P.txt", "T.txt", P_size, T_size)

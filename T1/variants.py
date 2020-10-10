@@ -8,7 +8,7 @@ import numpy as np
 def test_case(p, t):
     data = []
     for i in range(len(p)):
-        run = perform_experiment(p[i], t, 2)
+        run = perform_experiment(p[i], t, 15)
         data.append(run)
     return data
 
